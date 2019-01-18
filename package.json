@@ -38,9 +38,8 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "react": "^16.7.0-alpha",
-    "react-cache": "^2.0.0-alpha.1",
-    "react-dom": "^16.7.0-alpha",
+    "react": "^16.8.0-alpha.0",
+    "react-dom": "^16.8.0-alpha.0",
     "react-textarea-autosize": "^7.1.0",
     "react-uid": "^2.2.0",
     "styled-components": "^4.1.1",
