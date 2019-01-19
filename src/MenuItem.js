@@ -11,12 +11,6 @@ function MenuItem(props) {
         // scroll: force scroll to bottom of chat message list
         scroll: true,
 
-        // altBackgrounds: the component needs different colors than the default AppMessage.js styling
-        altBackground1: props.altBackground1,
-        altBackground2: props.altBackground2,
-        altBackground3: props.altBackground3,
-        altBackground4: props.altBackground4,
-
         // disappearIf: tag this message to self destruct if/when "makeDisappear" calls it out by name
         disappearIf: props.disappear,
 
@@ -40,5 +34,6 @@ export default MenuItem
 /***************************** Styled Components *****************************/
 
 const Container = styled.div`
+  cursor: pointer;
   padding: 8px;
 `

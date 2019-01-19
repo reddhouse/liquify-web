@@ -40,15 +40,16 @@ function Legislation() {
       scroll: true,
       disappearIf: `BILL${bill.billId}`,
       makeDisappear: `BILL${bill.billId}`,
-      altBackground3: true,
       jsx: <BillDetails bill={bill} idx={idx}/>
     })
   }
 
   return (
     <Container>
-      <Title><StyledToday size="20"/>{" "}Legislation in Progress</Title>
-      <SubTitle>Bills Introduced by Lawmakers (newest first)</SubTitle>
+      <ColorCap>
+        <Title><StyledToday size="20"/>{" "}Legislation in Progress</Title>
+        <SubTitle>Bills Introduced by Lawmakers (newest first)</SubTitle>
+      </ColorCap>
       {bills.slice(pageIdx, pageIdx + 3).map((bill, idx) => {
         return (
           <Bill key={uid(bill)} onClick={() => showBillDetails(bill, idx)}>
@@ -78,16 +79,26 @@ const Container = styled.div`
 
 `
 
+const ColorCap = styled.div`
+  margin: -10px -10px 12px -10px;
+  padding: 10px 10px 6px 10px;
+  border-radius: 10px 10px 0px 0px;
+  color: ${props => props.theme.color1};
+  background-color: ${props => props.theme.color5};
+`
+
 const Title = styled.div`
-  margin: 6px 0px 2px 0px;
+  margin: 2px 0px 2px 0px;
   font-weight: 600;
 `
 
 const SubTitle = styled.div`
-  margin: 4px 0px 10px 0px;
+  margin: 4px 0px 4px 0px;
+  font-size: 0.9em;
 `
 
 const Bill = styled.div`
+  cursor: pointer;
   margin: 4px;
   padding: 8px;
   color: ${props => props.theme.color7};
@@ -103,6 +114,7 @@ const NavContainer = styled.div`
 `
 
 const Nav = styled.div`
+  cursor: pointer;
   flex: 0 1 auto;
   margin: 15px 10px 0px 10px;
 
@@ -147,6 +159,7 @@ const StyledToday = styled(Today)`
 `
 
 const LinkShrink = styled.span`
+  cursor: pointer;
   font-size: 0.85em;
   color: ${props => props.theme.color4};
 `

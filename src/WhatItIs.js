@@ -5,8 +5,10 @@ import { Droplet } from 'styled-icons/icomoon/Droplet.cjs'
 function WhatItIs() {
   return (
     <Container>
-      <Title><StyledDroplet size="18"/>{" "}What is Liquify?</Title>
-      <SubTitle>Liquid Democracy in Action</SubTitle>
+      <ColorCap>
+        <Title><StyledDroplet size="18"/>{" "}What is Liquify?</Title>
+        <SubTitle>Liquid Democracy in Action</SubTitle>
+      </ColorCap>
 
       {/* <SectionTitle>First, what is liquid democracy?</SectionTitle> */}
       <ShortBreak>&nbsp;</ShortBreak>
@@ -42,13 +44,22 @@ const Container = styled.div`
 
 `
 
+const ColorCap = styled.div`
+  margin: -10px -10px 12px -10px;
+  padding: 10px 10px 6px 10px;
+  border-radius: 10px 10px 0px 0px;
+  color: ${props => props.theme.color1};
+  background-color: ${props => props.theme.color10};
+`
+
 const Title = styled.div`
-  margin: 6px 0px 2px 0px;
+  margin: 2px 0px 2px 0px;
   font-weight: 600;
 `
 
 const SubTitle = styled.div`
-  margin: 4px 0px 10px 0px;
+  margin: 4px 0px 4px 0px;
+  font-size: 0.9em;
 `
 
 const StyledDroplet = styled(Droplet)`
@@ -71,6 +82,6 @@ const Indent = styled.div`
   margin: 0% 5%;
   margin-bottom: 4px;
   text-align: center;
-  color: ${props => props.theme.color10};
+  ${'' /* color: ${props => props.theme.color10}; */}
   font-weight: 600;
 `

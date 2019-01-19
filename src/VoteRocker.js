@@ -5,6 +5,7 @@ function RockerSwitch() {
   const [checked, setChecked] = useState(false)
   const [masked, setMasked] = useState(true)
   const [zIndex, setZIndex] = useState(99)
+  const [zIndex2, setZIndex2] = useState(99)
   const firstUpdate = useRef(true)
 
   useLayoutEffect(() => {
@@ -14,6 +15,8 @@ function RockerSwitch() {
       firstUpdate.current = false
       return
     }
+    // zIndex2 used in Positioners, and zIndex used in main RockerMask
+    setZIndex2(-1)
     let timer1 = setTimeout(() => {
       setZIndex(-1)
     }, 550)
@@ -27,11 +30,14 @@ function RockerSwitch() {
         Positioner1 is an exact copy of RockerMask, but made to be invisible.
         The problem was that RockerMask was larger than Rocker/RockerWrapper, so
         I needed a dummy placeholder to fill the actual (relative) space in the container.
+
+        Update: As it happens, I needed a non-transparent (less opaque) version of the
+        button text also, so this worked perfectly.
       */}
 
       <Positioner1>
-        <Positioner2>Delegated</Positioner2>
-        <Positioner3>tap to vote</Positioner3>
+        <Positioner2 zIndex={zIndex2} onClick={() => setMasked(false)}>Delegated</Positioner2>
+        <Positioner3 zIndex={zIndex2} onClick={() => setMasked(false)}>tap to vote</Positioner3>
 
         <RockerWrapper>
           <Rocker onClick={() => setChecked(!checked)}>
@@ -55,7 +61,7 @@ export default RockerSwitch
 // https://codepen.io/marcusconnor/pen/QJNvMa
 
 const Container = styled.div`
-
+  cursor: pointer;
 `
 
 const Positioner1 = styled.div`
@@ -70,22 +76,23 @@ const Positioner1 = styled.div`
 `
 
 const Positioner2 = styled.div`
-  opacity: 0;
+  opacity: 1;
   font-size: 0.85em;
   font-weight: 600;
-  color: transparent;
+  color: ${props => props.theme.color1};
+  z-index: ${props => props.zIndex};
 `
 
 const Positioner3 = styled.div`
-  opacity: 0;
+  opacity: 1;
   font-size: 0.7em;
   font-weight: 600;
-  color: transparent;
+  color: ${props => props.theme.color1};
+  z-index: ${props => props.zIndex};
 `
 
 const RockerWrapper = styled.div`
   position: absolute;
-
   box-sizing: border-box;
   font-family: 'Arial' sans-serif;
   font-size: 100%;
@@ -100,8 +107,8 @@ const Rocker = styled.div`
   display: inline-block;
   position: relative;
   font-size: 0.75em;
-${'' /* Change to large rocker */}
-${'' /* font-size: 2em; */}
+  ${'' /* Change to large rocker */}
+  ${'' /* font-size: 2em; */}
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -204,16 +211,14 @@ const SwitchRight = styled(Switch)`
 
 const RockerMask = styled.div`
   position: absolute;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 8px 8px 8px 8px;
   border: 2px solid ${props => props.theme.color1};
-  ${'' /* background-color: ${props => props.theme.color8}; */}
-  background-color: black;
-  opacity: 0.8;
+  background-color: ${props => props.theme.color11};
+  opacity: 0.6;
   z-index: ${props => props.zIndex};
 
   ${props => !props.masked && css`
@@ -223,15 +228,13 @@ const RockerMask = styled.div`
 `
 
 const MaskContent1 = styled.div`
-  opacity: 1;
   font-size: 0.85em;
   font-weight: 600;
   color: ${props => props.theme.color1};
 `
 
 const MaskContent2 = styled.div`
-  opacity: 1;
   font-size: 0.7em;
   font-weight: 600;
-  color: ${props => props.theme.color4};
+  color: ${props => props.theme.color1};
 `

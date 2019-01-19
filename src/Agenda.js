@@ -41,15 +41,16 @@ function Agenda() {
       scroll: true,
       disappearIf: `INITIATIVE${initiative.initiativeId}`,
       makeDisappear: `INITIATIVE${initiative.initiativeId}`,
-      altBackground4: true,
       jsx: <InitiativeDetails initiative={initiative} idx={idx}/>
     })
   }
 
   return (
     <Container>
-      <Title><StyledList size="20" />{" "}Liquid Agenda</Title>
-      <SubTitle>Initiatives Ranked by Priority (voter support)</SubTitle>
+      <ColorCap>
+        <Title><StyledList size="22" />{" "}Liquid Agenda</Title>
+        <SubTitle>Initiatives Ranked by Priority (voter&nbsp;support)</SubTitle>
+      </ColorCap>
       {initiatives.slice(pageIdx, pageIdx + 3).map((initiative, idx) => {
         return (
           <Initiative key={uid(initiative)} onClick={() => showInitiativeDetails(initiative, idx)}>
@@ -78,17 +79,26 @@ const Container = styled.div`
 
 `
 
+const ColorCap = styled.div`
+  margin: -10px -10px 12px -10px;
+  padding: 10px 10px 6px 10px;
+  border-radius: 10px 10px 0px 0px;
+  color: ${props => props.theme.color1};
+  background-color: ${props => props.theme.color4};
+`
+
 const Title = styled.div`
-  margin: 6px 0px 2px 0px;
+  margin: 2px 0px 2px 0px;
   font-weight: 600;
+`
+
+const SubTitle = styled.div`
+  margin: 4px 0px 4px 0px;
+  font-size: 0.9em;
 `
 
 const StyledList = styled(List)`
   display:inline;
-`
-
-const SubTitle = styled.div`
-  margin: 4px 0px 10px 0px;
 `
 
 const Rank = styled.span`
@@ -96,6 +106,7 @@ const Rank = styled.span`
 `
 
 const Initiative = styled.div`
+  cursor: pointer;
   margin: 4px;
   padding: 8px;
   color: ${props => props.theme.color7};
@@ -111,6 +122,7 @@ const NavContainer = styled.div`
 `
 
 const Nav = styled.div`
+  cursor: pointer;
   flex: 0 1 auto;
   margin: 15px 10px 0px 10px;
 
@@ -120,6 +132,7 @@ const Nav = styled.div`
 `
 
 const AddNew = styled.div`
+  cursor: pointer;
   flex: 0 1 auto;
   margin: 15px 0px 0px 0px;
   color: ${props => props.theme.color9};
@@ -142,6 +155,7 @@ const Problem = styled.div`
 `
 
 const LinkShrink = styled.span`
+  cursor: pointer;
   font-size: 0.85em;
   color: ${props => props.theme.color4};
 `

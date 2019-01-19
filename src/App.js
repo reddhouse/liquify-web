@@ -51,5 +51,6 @@ const lcTheme = {
   color8: "#191a34",
   // VoteRocker combo
   color9: "#478547",
-  color10: "#bd5757"
+  color10: "#bd5757",
+  color11: "#4d4d4d"
 }

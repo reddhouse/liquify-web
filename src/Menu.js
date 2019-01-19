@@ -36,7 +36,6 @@ function Menu() {
           icon={<StyledList size="20"/>}
           disappear="AGENDA"
           variableHeightMsg={"AGENDA"}
-          altBackground4={true}
         />
       </MenuButton>
 
@@ -47,7 +46,6 @@ function Menu() {
           icon={<StyledToday size="20"/>}
           disappear="LEGISLATION"
           variableHeightMsg={"LEGISLATION"}
-          altBackground3={true}
         />
       </MenuButton>
 
@@ -57,7 +55,6 @@ function Menu() {
           component={<Account />}
           icon={<StyledPerson size="20"/>}
           disappear="ACCOUNT"
-          altBackground1={true}
         />
       </MenuButton>
 
@@ -95,6 +92,7 @@ const Container = styled.div`
 `
 
 const MenuButton = styled.div`
+  cursor: pointer;
   flex: 0 1 auto;
   margin: 1vh;
   width: 100%;

@@ -16,13 +16,13 @@ function Main(props) {
   useEffect(() => {
     let timer1 = setTimeout(() => {
       setOpacity('0')
-    }, 1050) //1050
+    }, 50) //1050
     let timer2 = setTimeout(() => {
       setSplashVisible(false)
       setOpacity('1')
       // Whatever URL you came from, let's send you "forward" to '/'
       history.pushState(null, '', '/')
-    }, 1350) //1350
+    }, 50) //1350
 
     return () => {
       clearTimeout(timer1)

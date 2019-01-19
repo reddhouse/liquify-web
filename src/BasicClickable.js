@@ -27,5 +27,6 @@ export default BasicClickable
 /***************************** Styled Components *****************************/
 
 const Container = styled.div`
+  cursor: pointer;
   padding: 8px;
 `

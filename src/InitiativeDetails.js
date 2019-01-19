@@ -8,26 +8,29 @@ function InitiativeDetails({ initiative, idx }) {
 
   return (
     <Container>
-      <Title>{initiative.title}</Title>
-      <hr />
-      <div>{initiative.summary}<Link onClick={() => setError(!error)}> read more...</Link></div>
-      {
-        error && <ErrorMsg onClick={() => setError(!error)}>Sorry, this is only an alpha release of Liquify, and most of these initiatives are only placeholders.<LinkShrink>{"[-]"}</LinkShrink></ErrorMsg>
-      }
-      <br />
-      <FlexFooter>
+      <FlexColorTab></FlexColorTab>
+      <FlexContent>
+        <Title>{initiative.title}</Title>
+        <hr />
+        <div>{initiative.summary}<Link onClick={() => setError(!error)}> read more...</Link></div>
+        {
+          error && <ErrorMsg onClick={() => setError(!error)}>Sorry, this is only an alpha release of Liquify. Links to summaries of initiatives will eventually need to be stack-ranked by Liquify users.<LinkShrink>{"[-]"}</LinkShrink></ErrorMsg>
+        }
+        <br />
+        <FlexFooter>
 
-        <Stats>
-          <Metric>Rank: {(idx + 1).toLocaleString('en')}</Metric>
-          <Metric>{votes.toLocaleString('en')} verified voters</Metric>
-        </Stats>
+          <Stats>
+            <Metric>Rank: {(idx + 1).toLocaleString('en')}</Metric>
+            <Metric>{votes.toLocaleString('en')} verified voters</Metric>
+          </Stats>
 
-        <Support>
-          <div>Support?</div>
-          <VoteRocker />
-        </Support>
+          <Support>
+            <div>Support?</div>
+            <VoteRocker />
+          </Support>
 
-      </FlexFooter>
+        </FlexFooter>
+      </FlexContent>
     </Container>
   )
 }
@@ -37,7 +40,19 @@ export default InitiativeDetails
 /***************************** Styled Components *****************************/
 
 const Container = styled.div`
+  display: flex;
+`
 
+const FlexColorTab = styled.div`
+  min-height: 100%;
+  min-width: 10px;
+  margin: -10px 6px -10px -10px;
+  background-color: ${props => props.theme.color4};
+  border-radius: 10px 0px 0px 10px;
+`
+
+const FlexContent = styled.div`
+  margin-left: 4px;
 `
 
 const Title = styled.div`
@@ -45,10 +60,12 @@ const Title = styled.div`
 `
 
 const Link = styled.span`
+  cursor: pointer;
   color: ${props => props.theme.color4};
 `
 
 const LinkShrink = styled.span`
+  cursor: pointer;
   font-size: 0.85em;
   color: ${props => props.theme.color4};
 `

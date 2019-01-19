@@ -45,7 +45,6 @@ function Header() {
               component={<Agenda />}
               icon={<StyledList size="20"/>}
               disappear="AGENDA"
-              altBackground4={true}
               variableHeightMsg={"AGENDA"}
             />
     })
@@ -60,7 +59,6 @@ function Header() {
               component={<Legislation />}
               icon={<StyledToday size="20"/>}
               disappear="LEGISLATION"
-              altBackground3={true}
               variableHeightMsg={"LEGISLATION"}
             />
     })
@@ -75,7 +73,6 @@ function Header() {
               component={<Account />}
               icon={<StyledPerson size="20"/>}
               disappear="ACCOUNT"
-              altBackground1={true}
             />
     })
     addMessage({
@@ -98,7 +95,6 @@ function Header() {
       scroll: true,
       disappearIf: 'ACCOUNT',
       makeDisappear: 'ACCOUNT',
-      altBackground1: true,
       jsx: <Account />
     })
   }

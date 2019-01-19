@@ -23,7 +23,6 @@ function Welcome1() {
       scroll: true,
       disappearIf: "AGENDA",
       makeDisappear: "AGENDA",
-      altBackground4: true,
       variableHeightMsg: "AGENDA",
       jsx: <Agenda />
     })
@@ -34,7 +33,6 @@ function Welcome1() {
       scroll: true,
       disappearIf: "LEGISLATION",
       makeDisappear: "LEGISLATION",
-      altBackground3: true,
       variableHeightMsg: "LEGISLATION",
       jsx: <Legislation />
     })
@@ -45,7 +43,6 @@ function Welcome1() {
       scroll: true,
       disappearIf: "ACCOUNT",
       makeDisappear: "ACCOUNT",
-      altBackground1: true,
       jsx: <Account />
     })
   }
@@ -91,5 +88,6 @@ const NoWrap = styled.span`
 `
 
 const Link = styled.span`
+  cursor: pointer;
   color: ${props => props.theme.color4};
 `

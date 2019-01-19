@@ -16,10 +16,6 @@ function AppMessage(props) {
         partOfGroup={props.partOfGroup}
         fromJustin={props.fromJustin}
         fromUser={props.fromUser}
-        altBackground1={props.altBackground1}
-        altBackground2={props.altBackground2}
-        altBackground3={props.altBackground3}
-        altBackground4={props.altBackground4}
         opacity={opacity}
       >
         {props.jsx}
@@ -70,25 +66,6 @@ const Message = styled.div`
 
   ${props => props.fromJustin && css`
     margin-left: 20px;
-  `}
-
-  ${props => props.altBackground1 && css`
-    color: ${props => props.theme.color1};
-    background-color: ${props => props.theme.color7};
-  `}
-
-  ${'' /* CURRENTLY NOT IN USE!!! */}
-  ${props => props.altBackground2 && css`
-    color: ${props => props.theme.color1};
-    background-color: ${props => props.theme.color5};
-  `}
-
-  ${props => props.altBackground3 && css`
-    border: 3px solid ${props => props.theme.color5};
-  `}
-
-  ${props => props.altBackground4 && css`
-    border: 3px solid ${props => props.theme.color4};
   `}
 
   ${props => props.fromUser && css`

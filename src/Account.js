@@ -24,11 +24,13 @@ function Account() {
 
   return (
     <Container>
-      <Title><StyledPerson size="20"/>{" "}My Account</Title>
-      <SubTitle>Choose Your Delegate</SubTitle>
+      <ColorCap>
+        <Title><StyledPerson size="20"/>{" "}My Account</Title>
+        <SubTitle>Choose Your Delegate</SubTitle>
+      </ColorCap>
 
       <Button>
-        <div>Hello <ColorSpan>new user!</ColorSpan> Until you are registered, your vote is currently being delegated to <ColorSpan>David H.</ColorSpan></div>
+        <div>Hello <ColorSpan>new user!</ColorSpan> Until you are registered, your vote is currently being delegated to <ColorSpan>Matt K.</ColorSpan></div>
         <FlexRow onClick={() => toggleError('1')}>
           <div><Link>Settings</Link></div>
           <div><Link>Voting History</Link></div>
@@ -39,16 +41,17 @@ function Account() {
       </Button>
 
       <Button>
-        <div onClick={() => toggleError('2')}><StyledMap size="30" /><CenteredText><span>&nbsp;&nbsp;</span>Find Your District</CenteredText></div>
+        <div onClick={() => toggleError('2')}><StyledBot size="30" /><CenteredText><span>&nbsp;&nbsp;</span>My Liquid Representative</CenteredText></div>
         {
-          error2 && <ErrorMsg onClick={() => toggleError('2')}>I just liked the look of these map signs. Coming soon... <LinkShrink>{"[-]"}</LinkShrink></ErrorMsg>
+          error2 && <ErrorMsg onClick={() => toggleError('2')}>Yup, that's a robot. Makes you think, doesn't it? Stay tuned. <LinkShrink>{"[-]"}</LinkShrink></ErrorMsg>
         }
       </Button>
 
       <Button>
-        <div onClick={() => toggleError('3')}><StyledBot size="30" /><CenteredText><span>&nbsp;&nbsp;</span>My Liquid Representative</CenteredText></div>
+        <div onClick={() => toggleError('3')}><StyledMap size="30" /><CenteredText><span>&nbsp;&nbsp;</span>My District</CenteredText></div>
+
         {
-          error3 && <ErrorMsg onClick={() => toggleError('3')}>Yup, that's a robot. Makes you think, doesn't it? <LinkShrink>{"[-]"}</LinkShrink></ErrorMsg>
+          error3 && <ErrorMsg onClick={() => toggleError('3')}>Coming soon. <LinkShrink>{"[-]"}</LinkShrink></ErrorMsg>
         }
       </Button>
     </Container>
@@ -63,13 +66,22 @@ const Container = styled.div`
 
 `
 
+const ColorCap = styled.div`
+  margin: -10px -10px 12px -10px;
+  padding: 10px 10px 6px 10px;
+  border-radius: 10px 10px 0px 0px;
+  color: ${props => props.theme.color2};
+  background-color: ${props => props.theme.color7};
+`
+
 const Title = styled.div`
-  margin: 6px 0px 2px 0px;
+  margin: 2px 0px 2px 0px;
   font-weight: 600;
 `
 
 const SubTitle = styled.div`
-  margin: 4px 0px 10px 0px;
+  margin: 4px 0px 4px 0px;
+  font-size: 0.9em;
 `
 
 const StyledPerson = styled(Person)`
@@ -91,13 +103,13 @@ const Button = styled.div`
   padding: 8px;
   color: ${props => props.theme.color8};
   background-color: ${props => props.theme.color2};
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  border: 1px solid ${props => props.theme.color8};
+  box-shadow: 0 1px 3px rgba(0,0,0,0.24), 0 1px 2px rgba(0,0,0,0.48);
+  ${'' /* border: 1px solid ${props => props.theme.color7}; */}
   border-radius: 10px;
 `
 
 const ColorSpan = styled.span`
-  color: ${props => props.theme.color5};
+  color: ${props => props.theme.color7};
   font-weight: 600;
 `
 
@@ -112,10 +124,12 @@ const CenteredText = styled.span`
 `
 
 const Link = styled.span`
+  cursor: pointer;
   color: ${props => props.theme.color4};
 `
 
 const LinkShrink = styled.span`
+  cursor: pointer;
   font-size: 0.85em;
   color: ${props => props.theme.color4};
 `

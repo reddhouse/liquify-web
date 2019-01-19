@@ -50,8 +50,10 @@ function Learn() {
 
   return (
     <Container>
-      <Title><StyledHelp size="20"/>{" "}Frequently Asked Questions</Title>
-      <SubTitle>Tap each question to see answer, or <Link onClick={() => setExpandAll(!expandAll)}>{expandAll ? "collapse" : "expand"}{" all"}.</Link></SubTitle>
+      <ColorCap>
+        <Title><StyledHelp size="20"/>{" "}Frequently Asked Questions</Title>
+        <SubTitle>Tap each question to see answer, or <Link onClick={() => setExpandAll(!expandAll)}>{expandAll ? "collapse" : "expand"}&nbsp;{"all"}.</Link></SubTitle>
+      </ColorCap>
       {
         FAQs.map((qaObj) => <QACombo key={uid(qaObj)} qaObj={qaObj} expandAll={expandAll} />)
       }
@@ -67,16 +69,26 @@ const Container = styled.div`
 
 `
 
+const ColorCap = styled.div`
+  margin: -10px -10px 12px -10px;
+  padding: 10px 10px 6px 10px;
+  border-radius: 10px 10px 0px 0px;
+  color: ${props => props.theme.color2};
+  background-color: ${props => props.theme.color11};
+`
+
 const Title = styled.div`
-  margin: 6px 0px 2px 0px;
+  margin: 2px 0px 2px 0px;
   font-weight: 600;
 `
 
 const SubTitle = styled.div`
-  margin: 4px 0px 10px 0px;
+  margin: 4px 0px 4px 0px;
+  font-size: 0.9em;
 `
 
 const Link = styled.span`
+  cursor: pointer;
   color: ${props => props.theme.color4};
 `
 

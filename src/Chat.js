@@ -27,7 +27,6 @@ function Chat(props) {
       let foundAtIdx = initiatives.findIndex(init => init.initiativeId == pathArray[2])
       addMessage({
         scroll: false,
-        altBackground4: true,
         jsx: <InitiativeDetails initiative={initiatives[foundAtIdx]} idx={foundAtIdx}/>
       })
       addMessage({
