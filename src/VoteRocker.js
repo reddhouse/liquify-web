@@ -35,9 +35,9 @@ function RockerSwitch() {
         button text also, so this worked perfectly.
       */}
 
-      <Positioner1>
-        <Positioner2 zIndex={zIndex2} onClick={() => setMasked(false)}>Delegated</Positioner2>
-        <Positioner3 zIndex={zIndex2} onClick={() => setMasked(false)}>tap to vote</Positioner3>
+      <Positioner1 onClick={() => setMasked(false)}>
+        <Positioner2 zIndex={zIndex2}>Delegated</Positioner2>
+        <Positioner3 zIndex={zIndex2}>tap to vote</Positioner3>
 
         <RockerWrapper>
           <Rocker onClick={() => setChecked(!checked)}>
@@ -45,7 +45,7 @@ function RockerSwitch() {
             <SwitchRight checked={checked}>No</SwitchRight>
           </Rocker>
         </RockerWrapper>
-        <RockerMask masked={masked} zIndex={zIndex} onClick={() => setMasked(false)}><MaskContent1>Delegated</MaskContent1><MaskContent2>tap to vote</MaskContent2></RockerMask>
+        <RockerMask masked={masked} zIndex={zIndex}><MaskContent1>Delegated</MaskContent1><MaskContent2>tap to vote</MaskContent2></RockerMask>
 
 
       </Positioner1>

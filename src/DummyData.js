@@ -28,7 +28,8 @@ export const DummyInitiatives = [
     votes: 2403,
     title: "Reduce carbon emissions by implementing a carbon tax.",
     problem: "global warming",
-    summary: "This is a long description to see how overflow looks... Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. v Businesses, households, and automobiles are releasing too much CO2 into the atmosphere." ,
+    // summary: "This is a long description to see how overflow looks... Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere.",
+    summary: "Businesses, households, and automobiles are releasing too much CO2 into the atmosphere.",
     keywords: ["Global Warming", "Environment", "Carbon Dioxide"],
   },
   {
@@ -246,18 +247,36 @@ export const FAQs = [
   },
 
   {
-    q: "What happens if a relative majority of voters vote to do something terrible?",
+    q: "How will Liquify prevent hacking or voter fraud?",
     a: [
-      "Unfortunately, your liquid representative will be obligated to try and make it a law. Thankfully, the US government has plenty of checks and balances to stop terrible (legislative) things from happening.",
-      "For the record, I believe that while a large number of Americans might nod their heads in passive agreement with the hate and fear mongers they see on television, acting on that fear in a private, and explicit manner, is a threshold that most people will not cross."
+      "The most dangerous \"hack\" to an online voting platform is the kind where 1 person (or entity) can create fake accounts and skew voting results. This type of fraud can be prevented at the time of user registration, but will require a more intensive sign-up process than your average web service.",
+      "Other types of hacks will be mitigated by keeping operations transparent, and by having 3rd-party (democratically selected) auditors regularly investigate and publish reports on the security of the app and organization."
     ]
   },
 
   {
-    q: "What will it actually take for liquid democracy to flourish?",
+    q: "What happens if a relative majority of voters vote to do something terrible?",
     a: [
-      "People must be able to participate in the democratic process quickly and easily, while feeling confident that, in the absence of lobbying and special interests, consensus is actually possible, and sensible initiatives will naturally rise to the top of the Liquid Agenda.",
-      "Furthermore, supporters of liquid democracy need to emphasize that seeking office as a liquid candidate is NOT politics as usual. A liquid candidate does not need to be an expert in law or business, talk a certain way, or have an answer to every question. Saying \"I don’t know, let me check Liquify\" is both liberating and empowering, and average citizens will need to begin stepping-up, and seeking office."
+      "Unfortunately, your liquid representative will be obligated to try and make it a law. Thankfully, the US government has plenty of checks and balances to stop terrible (legislative) things from happening.",
+      "For the record, we believe that while a large number of Americans might nod their heads in passive agreement with the hate and fear mongers they see on television, acting on that fear in a private, and explicit manner, is a threshold that most people will not cross."
+    ]
+  },
+
+  {
+    q: "What will it take for liquid democracy to actually catch-on?",
+    a: [
+      "1. People must be able to participate in the democratic process quickly and easily, while trusting that their votes have not been altered or miscounted.",
+      "2. We need to prove that consensus is actually possible despite ideological differences, and that sensible initiatives will rise to the top of the Liquid Agenda (in the absence lobbying and special interest influence).",
+      "3. Average citizens will need to begin stepping-up, and running for office. Seeking office as a liquid candidate is NOT politics as usual. A liquid candidate does not need to be an expert in law or business, talk a certain way, or have an answer to every question. Saying \"I don’t know, let me check Liquify\" is both liberating and empowering."
+    ]
+  },
+
+  {
+    q: "Why does Liquify attempt to copy the functionality of a chat messaging app",
+    a: [
+      "1. People are familiar with the concept of sending/receiving messages on mobile devices.",
+      "2. Receiving updates/push notifications related to topics or keywords that you have previously configured in your account, should be a more pleasant and efficient experience than regularly visiting Liquify's website.",
+      "3. Existing messaging services do not do enough to prevent a person from misrepresenting their identity."
     ]
   },
 
@@ -279,7 +298,7 @@ export const FAQs = [
   {
     q: "How can I sign up?",
     a: [
-      "You can't. This version of Liquify was built for the sole purpose of gathering influencer feedback, but if you strongly believe this is a good (or bad) idea, I'd love to hear from you. Shoot me an email at: reddhouse@pm.me"
+      "This version of Liquify was built for the sole purpose of gathering influencer feedback. If someone other than me (Justin) shared this link with you, you're welcome to shoot me an email at: reddhouse@pm.me"
     ]
   }
 ]
