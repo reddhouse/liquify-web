@@ -64,6 +64,22 @@ export const DummyInitiatives = [
     summary: "Property taxes can stifle investment in real estate and, therefore, stifle investment in our communities.",
     keywords: ["Tax Revenue"],
   },
+  {
+    initiativeId: "8",
+    votes: 13,
+    title: "Implement a 1% wealth tax to pay for critical public services.",
+    problem: "income inequality, tax reform",
+    summary: "According to Oxfam, 82% of the world's wealth generated in 2017 was captured by the richest 1%, while governments struggle to pay for services like healthcare and education.",
+    keywords: ["Inheritance"],
+  },
+  // {
+  //   initiativeId: "",
+  //   votes: 0,
+  //   title: "",
+  //   problem: "",
+  //   summary: "",
+  //   keywords: [""],
+  // },
 ]
 
 export const DummyBills = [
