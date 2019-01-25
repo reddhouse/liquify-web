@@ -88,6 +88,14 @@ export const DummyInitiatives = [
     summary: "Business leaders have spoken out about an immoral wealth imbalance in our country, but innovative new social programs such as UBI should not be funded entirely by taxing the wealthy.",
     keywords: ["Wilson"],
   },
+  {
+    initiativeId: "11",
+    votes: 16,
+    title: "Require manufacturers to give consumers the Right to Repair.",
+    problem: "planned obsolescence",
+    summary: "Companies would rather sell you a new product than have you repair an old one, but this takes a massive toll on the environment.",
+    keywords: ["iFixIt"],
+  },
   // {
   //   initiativeId: "",
   //   votes: 0,
