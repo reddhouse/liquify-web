@@ -70,7 +70,23 @@ export const DummyInitiatives = [
     title: "Implement a 1% wealth tax to pay for critical public services.",
     problem: "income inequality, tax reform",
     summary: "According to Oxfam, 82% of the world's wealth generated in 2017 was captured by the richest 1%, while governments struggle to pay for services like healthcare and education.",
-    keywords: ["Inheritance"],
+    keywords: ["Quackenbush"],
+  },
+  {
+    initiativeId: "9",
+    votes: 14,
+    title: "Charge a pollution tax to businesses that produce or package their goods in plastic.",
+    problem: "environmental pollution",
+    summary: "Single stream recycling efforts are failing, and it is not realistic that the general public will take the time or make the effort to fix it. Individuals are hard-wired to almost always pick the most convenient option, but collectively, we can align incentives correctly to protect our planet and our species.",
+    keywords: ["Koerth-Baker"],
+  },
+  {
+    initiativeId: "10",
+    votes: 15,
+    title: "Cut Department of Defense spending by 95% to fund Universal Basic Income.",
+    problem: "income inequality",
+    summary: "Business leaders have spoken out about an immoral wealth imbalance in our country, but innovative new social programs such as UBI should not be funded entirely by taxing the wealthy.",
+    keywords: ["Wilson"],
   },
   // {
   //   initiativeId: "",
@@ -265,7 +281,7 @@ export const FAQs = [
   {
     q: "How will Liquify prevent hacking or voter fraud?",
     a: [
-      "The most dangerous \"hack\" to an online voting platform is the kind where 1 person (or entity) can create fake accounts and skew voting results. This type of fraud can be prevented at the time of user registration, but will require a more intensive sign-up process than your average web service.",
+      "The most dangerous \"hack\" to an online voting platform is the kind where one person (or entity) can create fake accounts and skew voting results. This type of fraud can be prevented at the time of user registration, but will require a more intensive sign-up process than your average web service.",
       "Other types of hacks will be mitigated by keeping operations transparent, and by having 3rd-party (democratically selected) auditors regularly investigate and publish reports on the security of the app and organization."
     ]
   },

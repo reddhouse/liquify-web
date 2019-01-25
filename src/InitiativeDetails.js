@@ -14,7 +14,7 @@ function InitiativeDetails({ initiative, idx }) {
         <hr />
         <div>{initiative.summary}<Link onClick={() => setError(!error)}> read more...</Link></div>
         {
-          error && <ErrorMsg onClick={() => setError(!error)}>Sorry, this is only an alpha release of Liquify. Links to summaries of initiatives will eventually need to be stack-ranked by Liquify users.<LinkShrink>{"[-]"}</LinkShrink></ErrorMsg>
+          error && <ErrorMsg onClick={() => setError(!error)}>This initiative is for demonstration purposes only. Future initiative summaries will be stack-ranked by Liquify users.<LinkShrink>{"[-]"}</LinkShrink></ErrorMsg>
         }
         <br />
         <FlexFooter>
