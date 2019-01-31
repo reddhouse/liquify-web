@@ -1,7 +1,7 @@
 export const DummyInitiatives = [
   {
     initiativeId: "0",
-    votes: 691,
+    votes: 13901,
     title: "Build highrise condominiums at-cost for families that work downtown.",
     problem: "affordable housing",
     summary: "Middle and low income families do not having non-rental living options within a reasonable distance from most jobs.",
@@ -9,7 +9,7 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "1",
-    votes: 1035,
+    votes: 11035,
     title: "Allow a line by line liquid vote on the city's budget.",
     problem: "government expenses",
     summary: "Tax revenue is being wasted on projects/services with low public support.",
@@ -17,7 +17,7 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "2",
-    votes: 2594,
+    votes: 25094,
     title: "Force healthcare providers to display a standardized \"menu\" of costs for services.",
     problem: "healthcare costs",
     summary: "The cost of medical consultation and procedures are prohibitive for many in need of treatment.",
@@ -25,7 +25,7 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "3",
-    votes: 2403,
+    votes: 24003,
     title: "Reduce carbon emissions by implementing a carbon tax.",
     problem: "global warming",
     // summary: "This is a long description to see how overflow looks... Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere. Businesses, households, and automobiles are releasing too much CO2 into the atmosphere.",
@@ -34,7 +34,7 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "4",
-    votes: 196,
+    votes: 20906,
     title: "Re-draw election districts without any input from political parties.",
     problem: "gerrymandering",
     summary: "Rigging election districts to suit political parties is unfair, and undermines our democracy",
@@ -42,7 +42,7 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "5",
-    votes: 285,
+    votes: 12805,
     title: "Eliminate single occupancy vehicle access to downtown on weekdays.",
     problem: "traffic congestion, livability",
     summary: "Improve public transportation efficiency by removing more vehicles from the roads.",
@@ -50,7 +50,7 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "6",
-    votes: 286,
+    votes: 13086,
     title: "Build more park-and-ride lots connected to highspeed mass transit.",
     problem: "traffic congestion",
     summary: "Public transportation would be a viable option for more commuters if it were faster and more accessible.",
@@ -58,7 +58,7 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "7",
-    votes: 12,
+    votes: 1102,
     title: "Implement a flat-rate consumption tax to make taxation more equitable.",
     problem: "income inequality, tax reform",
     summary: "Property taxes can stifle investment in real estate and, therefore, stifle investment in our communities.",
@@ -66,7 +66,7 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "8",
-    votes: 13,
+    votes: 1103,
     title: "Implement a 1% wealth tax to pay for critical public services.",
     problem: "income inequality, tax reform",
     summary: "According to Oxfam, 82% of the world's wealth generated in 2017 was captured by the richest 1%, while governments struggle to pay for services like healthcare and education.",
@@ -74,7 +74,7 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "9",
-    votes: 14,
+    votes: 1104,
     title: "Charge a pollution tax to businesses that produce or package their goods in plastic.",
     problem: "environmental pollution",
     summary: "Single stream recycling efforts are failing, and it is not realistic that the general public will take the time or make the effort to fix it. Individuals are hard-wired to almost always pick the most convenient option, but collectively, we can align incentives correctly to protect our planet and our species.",
@@ -82,7 +82,7 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "10",
-    votes: 15,
+    votes: 1105,
     title: "Cut Department of Defense spending by 95% to fund Universal Basic Income.",
     problem: "income inequality",
     summary: "Business leaders have spoken out about an immoral wealth imbalance in our country, but innovative new social programs such as UBI should not be funded entirely by taxing the wealthy.",
@@ -90,11 +90,19 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "11",
-    votes: 16,
+    votes: 1106,
     title: "Require manufacturers to give consumers the Right to Repair.",
     problem: "planned obsolescence",
     summary: "Companies would rather sell you a new product than have you repair an old one, but this takes a massive toll on the environment.",
     keywords: ["iFixIt"],
+  },
+  {
+    initiativeId: "12",
+    votes: 1107,
+    title: "Start a national pharmaceutical company to compete with or replace existing drug companies.",
+    problem: "healthcare costs",
+    summary: "For-profit drug companies exist to do what is best for shareholders, not to save the most number of lives. Medicines, new and old, should be a public good.",
+    keywords: ["Lazarus"],
   },
   // {
   //   initiativeId: "",
