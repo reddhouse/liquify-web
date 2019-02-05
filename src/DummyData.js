@@ -114,7 +114,7 @@ export const DummyInitiatives = [
   },
   {
     initiativeId: "14",
-    votes: 0,
+    votes: 1109,
     title: "Increase the tax rate on capital gains and dividends.",
     problem: "wealth inequality",
     summary: "Ultra-high earners take home a significant amount of income through capital gains, but the tax rate on long-term capital gains is more than 13% less than the rate on ordinary income.",
