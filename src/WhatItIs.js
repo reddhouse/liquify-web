@@ -18,7 +18,7 @@ function WhatItIs() {
       <ShortBreak>&nbsp;</ShortBreak>
       <div>Instead of electing a traditional representative every few years to make laws on your behalf, liquid democracy encourages citizens to vote on individual issues.</div>
       <ShortBreak>&nbsp;</ShortBreak>
-      <div>If you are too busy, or disinterested in civic matters, you can delegate your votes to someone you know or trust. In turn, your delegate can delegate their own votes to another person, and all votes eventually <i>flow</i> down to your elected representative.</div>
+      <div>If you are too busy, or disinterested in civic matters, you can delegate your votes to someone you know or trust. All votes, delegated or direct, eventually <i>flow</i> down to your elected representative.</div>
       <ShortBreak>&nbsp;</ShortBreak>
       <div>Things get interesting when representatives in office become "liquid representatives", which means they have pledged to regularly tally liquid votes, and act in accordance with the majority of voters on EVERY policy choice.</div>
 

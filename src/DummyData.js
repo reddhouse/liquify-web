@@ -104,6 +104,22 @@ export const DummyInitiatives = [
     summary: "For-profit drug companies exist to do what is best for shareholders, not to save the most number of lives. Medicines, new and old, should be a public good.",
     keywords: ["Lazarus"],
   },
+  {
+    initiativeId: "13",
+    votes: 1108,
+    title: "Provide a temporary safe harbor for the publishers of online content to collectively negotiate with dominant online platforms.",
+    problem: "government accountability",
+    summary: "Tech giants like Google and Facebook have made it nearly impossible for quality journalism to reach the masses, and hold a disproportionate amount of power in the presentation of news and information to the public.",
+    keywords: ["Chavern"],
+  },
+  {
+    initiativeId: "14",
+    votes: 0,
+    title: "Increase the tax rate on capital gains and dividends.",
+    problem: "wealth inequality",
+    summary: "Ultra-high earners take home a significant amount of income through capital gains, but the tax rate on long-term capital gains is more than 13% less than the rate on ordinary income.",
+    keywords: ["Rattner"],
+  },
   // {
   //   initiativeId: "",
   //   votes: 0,
