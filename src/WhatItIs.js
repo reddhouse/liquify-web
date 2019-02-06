@@ -16,7 +16,7 @@ function WhatItIs() {
 
 
       <ShortBreak>&nbsp;</ShortBreak>
-      <div>Instead of electing a traditional representative every few years to make laws on your behalf, liquid democracy encourages citizens to vote on individual issues.</div>
+      <div>Instead of giving your elected representative free reign to make laws on your behalf, liquid democracy encourages citizens to vote on individual issues.</div>
       <ShortBreak>&nbsp;</ShortBreak>
       <div>If you are too busy, or disinterested in civic matters, you can delegate your votes to someone you know or trust. All votes, delegated or direct, eventually <i>flow</i> down to your elected representative.</div>
       <ShortBreak>&nbsp;</ShortBreak>
