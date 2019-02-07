@@ -120,6 +120,22 @@ export const DummyInitiatives = [
     summary: "Ultra-high earners take home a significant amount of income through capital gains, but the tax rate on long-term capital gains is more than 13% less than the rate on ordinary income.",
     keywords: ["Rattner"],
   },
+  {
+    initiativeId: "15",
+    votes: 1110,
+    title: "Eliminate criminal penalties for drug possession.",
+    problem: "decriminalization",
+    summary: "Evidence shows that reducing criminal penalties for drug possession does not increase rates of drug use or crime, but rather, yields a dramatic reduction in addiction, overdose and HIV/AIDS.",
+    keywords: ["Saady"],
+  },
+  {
+    initiativeId: "16",
+    votes: 1112,
+    title: "Require gun purchasers to obtain a license from their local police department.",
+    problem: "gun control",
+    summary: "In the state of Connecticut, a permit-to-purchase law for handguns resulted in a 40% reduction in gun homicides.",
+    keywords: ["Lopez"],
+  },
   // {
   //   initiativeId: "",
   //   votes: 0,
