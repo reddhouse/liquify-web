@@ -34,6 +34,7 @@ export default MenuItem
 /***************************** Styled Components *****************************/
 
 const Container = styled.div`
+  flex: 1 1 auto;
   cursor: pointer;
   padding: 8px;
 `

@@ -27,6 +27,7 @@ function Menu() {
           icon={<StyledDroplet size="18"/>}
           disappear="WHATITIS"
         />
+        <FlexColorTab color10/>
       </MenuButton>
 
       <MenuButton>
@@ -37,6 +38,7 @@ function Menu() {
           disappear="AGENDA"
           variableHeightMsg={"AGENDA"}
         />
+        <FlexColorTab color4/>
       </MenuButton>
 
       <MenuButton>
@@ -47,6 +49,7 @@ function Menu() {
           disappear="LEGISLATION"
           variableHeightMsg={"LEGISLATION"}
         />
+        <FlexColorTab color5/>
       </MenuButton>
 
       <MenuButton>
@@ -56,6 +59,7 @@ function Menu() {
           icon={<StyledPerson size="20"/>}
           disappear="ACCOUNT"
         />
+        <FlexColorTab color7/>
       </MenuButton>
 
       <MenuButton>
@@ -65,6 +69,7 @@ function Menu() {
           icon={<StyledHelp size="20"/>}
           disappear="LEARN"
         />
+        <FlexColorTab color11/>
       </MenuButton>
 
     </Container>
@@ -92,6 +97,9 @@ const Container = styled.div`
 `
 
 const MenuButton = styled.div`
+  display: flex;
+  justify-content: space-between;
+
   cursor: pointer;
   flex: 0 1 auto;
   margin: 1vh;
@@ -102,6 +110,26 @@ const MenuButton = styled.div`
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   ${'' /* border: 1px solid ${props => props.theme.color4}; */}
   border-radius: 2px;
+`
+
+const FlexColorTab = styled.div`
+  flex: 0 0 auto;
+  min-width: 8px;
+  background-color: ${props => {
+    if (props.color10)
+      return props.theme.color10
+    if (props.color4)
+      return props.theme.color4
+    if (props.color5)
+      return props.theme.color5
+    if (props.color7)
+      return props.theme.color7
+    if (props.color11)
+      return props.theme.color11
+    return props.theme.color1
+  }};
+  border: 1px solid ${props => props.theme.color1};
+  border-radius: 0px 2px 2px 0px;
 `
 
 const StyledList = styled(List)`
