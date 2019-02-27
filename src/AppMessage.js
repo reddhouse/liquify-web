@@ -89,7 +89,7 @@ const Message = styled.div`
     padding: 0px;
     color: ${props => props.theme.color7};
     background-color: ${props => props.theme.color1};
-    border: 1px solid ${props => props.theme.color4};
+    ${'' /* border: 1px solid ${props => props.theme.color4}; */}
   `}
 
   ${'' /* Create the effect of new messages fading onto screen.  */}
