@@ -1,9 +1,9 @@
-import React, { useRef, useContext } from 'react'
-import styled, { css } from 'styled-components'
-import Textarea from 'react-textarea-autosize';
-import { Send } from 'styled-icons/material/Send.cjs'
-import { Today } from 'styled-icons/material/Today.cjs'
-import { LiquidContext } from './LiquidStore'
+import { useRef, useContext } from 'react'
+import styled from 'styled-components'
+import TextareaAutosize from 'react-textarea-autosize';
+import { Send } from '@styled-icons/material'
+import { Today } from '@styled-icons/material'
+import { LiquidContext } from '../lib/LiquidStore'
 
 function Footer() {
   const inputRef = useRef()
@@ -28,13 +28,11 @@ function Footer() {
       addMessage({
         scroll: true,
         fromJustin: true,
-        jsx:  <div>
-                <div><JustinSpacer />Sorry, search didn't make the alpha release.</div>
-                <ShortBreak>&nbsp;</ShortBreak>
-                <div>This future feature will provide a search mechanism, and also a way to chat with Liquify support.</div>
-                <ShortBreak>&nbsp;</ShortBreak>
-                <div>In the mean time, feel free to email your questions or comments to reddhouse@pm.me</div>
-              </div>
+        jsx: <div>
+          <div><JustinSpacer />Sorry, search didn't make the alpha release.</div>
+          <ShortBreak>&nbsp;</ShortBreak>
+          <div>This future feature will provide a search mechanism, and a way to chat with Liquify support.</div>
+        </div>
       })
     }, 1000)
   }
@@ -47,15 +45,15 @@ function Footer() {
       {/* Currently, the longest menu items is Legislation in Progress*/}
       <MenuMirrorContainer>
         <MenuMirrorButton>
-          {<StyledToday size="20"/>}{" "}{"Legislation in Progress"}
+          {<StyledToday size="20" />}{" "}{"Legislation in Progress"}
         </MenuMirrorButton>
       </MenuMirrorContainer>
 
       <CenterOpenSpaceMirror />
 
       <ChatMirror>
-        <StyledTextArea inputRef={ref => inputRef.current = ref} placeholder="Search, or Ask a Question" />
-        <SendButton onClick={handleSubmit}><Send size="30"/></SendButton>
+        <StyledTextArea ref={ref => inputRef.current = ref} placeholder="Search, or Ask a Question" />
+        <SendButton onClick={handleSubmit}><Send size="30" /></SendButton>
       </ChatMirror>
       <RightOpenSpaceMirror />
     </Center>
@@ -122,7 +120,7 @@ const ChatMirror = styled.div`
   `}
 `
 
-const StyledTextArea = styled(Textarea)`
+const StyledTextArea = styled(TextareaAutosize)`
   flex: 99 0 auto;
   resize: none;
   border: 0;
@@ -135,7 +133,7 @@ const StyledTextArea = styled(Textarea)`
 `
 
 const SendButton = styled.div`
-  color: ${props => props.theme.color1}
+  color: ${props => props.theme.color1};
   margin: 7px 10px 7px 0px;
   ${props => props.theme.media.phone`margin: 0px 10px 0px 0px;`}
 `

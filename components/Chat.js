@@ -1,8 +1,8 @@
-import React, { useState, useContext, useEffect, useLayoutEffect, useRef } from 'react'
-import styled, { css } from 'styled-components'
+import { useContext, useEffect, useLayoutEffect, useRef } from 'react'
+import styled from 'styled-components'
 import { uid } from 'react-uid'
-import { scrollHelper } from './helpers'
-import { LiquidContext } from './LiquidStore'
+import { scrollHelper } from '../lib/helpers'
+import { LiquidContext } from '../lib/LiquidStore'
 import AppMessage from './AppMessage'
 import BasicClickable from './BasicClickable'
 import Welcome0 from './Welcome0'
@@ -27,7 +27,7 @@ function Chat(props) {
       let foundAtIdx = initiatives.findIndex(init => init.initiativeId == pathArray[2])
       addMessage({
         scroll: false,
-        jsx: <InitiativeDetails initiative={initiatives[foundAtIdx]} idx={foundAtIdx}/>
+        jsx: <InitiativeDetails initiative={initiatives[foundAtIdx]} idx={foundAtIdx} />
       })
       addMessage({
         scroll: false,
@@ -38,12 +38,12 @@ function Chat(props) {
         scroll: false,
         clickable: true,
         jsx: <BasicClickable
-                scroll={true}
-                fromJustin={true}
-                disappear="WELCOME1"
-                content="What does it all mean? Tap here for a quick intro."
-                nextMsg={<Welcome1 />}
-              />
+          scroll={true}
+          fromJustin={true}
+          disappear="WELCOME1"
+          content="What does it all mean? Tap here for a quick intro."
+          nextMsg={<Welcome1 />}
+        />
       })
     } else {
       addMessage({
@@ -66,7 +66,7 @@ function Chat(props) {
           return (
             <AppMessage
               key={uid(msg)}
-              { ...msg }
+              {...msg}
             />
           )
         })

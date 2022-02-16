@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import styled, { css } from 'styled-components'
 
 function AppMessage(props) {
@@ -10,7 +10,7 @@ function AppMessage(props) {
 
   return (
     <Container fromUser={props.fromUser}>
-      <Img src="/jt.jpg" fromJustin={props.fromJustin} opacity={opacity}/>
+      <Img src="/jt.jpg" fromJustin={props.fromJustin} opacity={opacity} />
       <Message
         clickable={props.clickable}
         partOfGroup={props.partOfGroup}

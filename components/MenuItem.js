@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
-import styled, { css } from 'styled-components'
-import { LiquidContext } from './LiquidStore'
+import { useContext } from 'react'
+import styled from 'styled-components'
+import { LiquidContext } from '../lib/LiquidStore'
 
 function MenuItem(props) {
   const { addMessage } = useContext(LiquidContext)

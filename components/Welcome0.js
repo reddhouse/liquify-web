@@ -1,10 +1,9 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 function Welcome0() {
   return (
     <Container>
-      <div><JustinSpacer />Ready to change the world?</div>
+      <div><JustinSpacer />Hello, and welcome to Liquify!</div>
     </Container>
   )
 }

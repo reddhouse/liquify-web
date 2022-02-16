@@ -1,16 +1,15 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import WhatItIs from './WhatItIs'
 import Agenda from './Agenda'
 import Legislation from './Legislation'
 import Account from './Account'
 import Learn from './Learn'
 import MenuItem from './MenuItem'
-import { Today } from 'styled-icons/material/Today.cjs'
-import { Person } from 'styled-icons/material/Person.cjs'
-import { LiveHelp as Help } from 'styled-icons/material/LiveHelp.cjs'
-import { FormatListNumbered as List } from 'styled-icons/material/FormatListNumbered.cjs'
-import { Droplet } from 'styled-icons/icomoon/Droplet.cjs'
+import { Today } from '@styled-icons/material'
+import { Person } from '@styled-icons/material'
+import { LiveHelp as Help } from '@styled-icons/material'
+import { FormatListNumbered as List } from '@styled-icons/material'
+import { Droplet } from '@styled-icons/icomoon'
 
 function Menu() {
   // IMPORTANT! When adding/deleting a menu item, keep in mind that the search bar
@@ -24,52 +23,52 @@ function Menu() {
         <MenuItem
           title="What is Liquify?"
           component={<WhatItIs />}
-          icon={<StyledDroplet size="18"/>}
+          icon={<StyledDroplet size="18" />}
           disappear="WHATITIS"
         />
-        <FlexColorTab color10/>
+        <FlexColorTab color10 />
       </MenuButton>
 
       <MenuButton>
         <MenuItem
           title="Liquid Agenda"
           component={<Agenda />}
-          icon={<StyledList size="20"/>}
+          icon={<StyledList size="20" />}
           disappear="AGENDA"
           variableHeightMsg={"AGENDA"}
         />
-        <FlexColorTab color4/>
+        <FlexColorTab color4 />
       </MenuButton>
 
       <MenuButton>
         <MenuItem
           title="Legislation in Progress"
           component={<Legislation />}
-          icon={<StyledToday size="20"/>}
+          icon={<StyledToday size="20" />}
           disappear="LEGISLATION"
           variableHeightMsg={"LEGISLATION"}
         />
-        <FlexColorTab color5/>
+        <FlexColorTab color5 />
       </MenuButton>
 
       <MenuButton>
         <MenuItem
           title="My Account"
           component={<Account />}
-          icon={<StyledPerson size="20"/>}
+          icon={<StyledPerson size="20" />}
           disappear="ACCOUNT"
         />
-        <FlexColorTab color7/>
+        <FlexColorTab color7 />
       </MenuButton>
 
       <MenuButton>
         <MenuItem
           title="FAQs"
           component={<Learn />}
-          icon={<StyledHelp size="20"/>}
+          icon={<StyledHelp size="20" />}
           disappear="LEARN"
         />
-        <FlexColorTab color11/>
+        <FlexColorTab color11 />
       </MenuButton>
 
     </Container>
@@ -114,7 +113,7 @@ const MenuButton = styled.div`
 
 const FlexColorTab = styled.div`
   flex: 0 0 auto;
-  min-width: 8px;
+  min-width: 18px;
   background-color: ${props => {
     if (props.color10)
       return props.theme.color10

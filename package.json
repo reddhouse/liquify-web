@@ -1,48 +1,23 @@
 {
-  "name": "liquify-web",
-  "version": "0.1.0",
-  "description": "Front-end of liquify.us",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "now-build": "webpack --mode production"
-  },
-  "author": "reddhouse",
-  "license": "ISC",
-  "babel": {
-    "presets": [
-      "env",
-      "react"
-    ],
-    "plugins": [
-      "transform-class-properties",
-      "transform-object-rest-spread"
-    ]
-  },
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^1.0.1",
-    "mini-css-extract-plugin": "^0.5.0",
-    "react-hot-loader": "^4.3.11",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.23.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.14"
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "react-textarea-autosize": "^7.1.0",
-    "react-uid": "^2.2.0",
-    "styled-components": "^4.1.1",
-    "styled-icons": "6.4.0"
+    "@styled-icons/boxicons-regular": "^10.38.0",
+    "@styled-icons/fa-solid": "^10.34.0",
+    "@styled-icons/icomoon": "^10.34.0",
+    "@styled-icons/material": "^10.34.0",
+    "next": "^12.0.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-textarea-autosize": "^8.3.3",
+    "react-uid": "^2.3.1",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.2"
   }
 }

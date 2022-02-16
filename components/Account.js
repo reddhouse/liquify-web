@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import styled, { css } from 'styled-components'
-import { Person } from 'styled-icons/material/Person.cjs'
-import { MapSigns } from 'styled-icons/fa-solid/MapSigns.cjs'
-import { Bot } from 'styled-icons/boxicons-regular/Bot.cjs'
+import { useState } from 'react'
+import styled from 'styled-components'
+import { Person } from '@styled-icons/material'
+import { MapSigns } from '@styled-icons/fa-solid'
+import { Bot } from '@styled-icons/boxicons-regular'
 
 function Account() {
   const [error1, setError1] = useState(false)
@@ -25,8 +25,8 @@ function Account() {
   return (
     <Container>
       <ColorCap>
-        <Title><StyledPerson size="20"/>{" "}My Account</Title>
-        <SubTitle>Choose Your Delegate</SubTitle>
+        <Title><StyledPerson size="20" />{" "}My Account</Title>
+        <SubTitle>Choose your delegate!</SubTitle>
       </ColorCap>
 
       <Button>
@@ -43,7 +43,7 @@ function Account() {
       <Button>
         <div onClick={() => toggleError('2')}><StyledBot size="30" /><CenteredText><span>&nbsp;&nbsp;</span>My Liquid Representative</CenteredText></div>
         {
-          error2 && <ErrorMsg onClick={() => toggleError('2')}>Yup, that's a robot. Makes you think, doesn't it? Stay tuned. <LinkShrink>{"[-]"}</LinkShrink></ErrorMsg>
+          error2 && <ErrorMsg onClick={() => toggleError('2')}>Would a robot make a good representative? <LinkShrink>{"[-]"}</LinkShrink></ErrorMsg>
         }
       </Button>
 

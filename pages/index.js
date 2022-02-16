@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react'
-import styled, { createGlobalStyle, css } from 'styled-components'
-import Header from './Header'
-import Chat from './Chat'
-import Footer from './Footer'
-import Menu from './Menu'
+import { useState, useEffect } from 'react'
+import styled from 'styled-components'
+import { useRouter } from 'next/router'
+import Header from '../components/Header'
+import Chat from '../components/Chat'
+import Footer from '../components/Footer'
+import Menu from '../components/Menu'
 
-function Main(props) {
+const IndexPage = () => {
+  const router = useRouter()
   // Send entryPath to Chat to handle initiatives shared by custom URL
-  const entryPath = location.pathname
+  const entryPath = router.pathname
 
   // Create a "loading screen" for effect only at this point
   const [opacity, setOpacity] = useState('1')
@@ -34,16 +36,15 @@ function Main(props) {
     <BackgroundImage>
       {
         splashVisible
-        ? <Splash><SplashText opacity={opacity}>LIQUIFY</SplashText></Splash>
-        : <Container opacity={opacity} >
-            <GlobalStyles />
+          ? <Splash><SplashText opacity={opacity}>LIQUIFY</SplashText></Splash>
+          : <Container opacity={opacity} >
             <Header />
             <Center>
               <LeftOpenSpace />
               <Menu />
               <CenterOpenSpace />
               <ChatContainer>
-                <Chat entryPath={entryPath}/>
+                <Chat entryPath={entryPath} />
               </ChatContainer>
               <RightOpenSpace />
             </Center>
@@ -54,16 +55,9 @@ function Main(props) {
   )
 }
 
-export default Main
+export default IndexPage
 
 /***************************** Styled Components *****************************/
-
-const GlobalStyles = createGlobalStyle`
-  body {
-    font-family: 'Verdana', 'Geneva', sans-serif;
-    font-size: 16px;
-  }
-`
 
 const BackgroundImage = styled.div`
   position: relative;
@@ -87,8 +81,6 @@ const SplashText = styled.div`
   opacity: ${props => props.opacity};
   transition: opacity 550ms ease-in-out;
   color: ${props => props.theme.color1};
-
-  @import url('https://fonts.googleapis.com/css?family=Montserrat');
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
 `

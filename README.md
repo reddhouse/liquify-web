@@ -1,6 +1,2 @@
 # liquify-web
-Front-end of liquify.us
-
-### installation
-- `npm install`
-- `npm start`
+Front-end of proof-of-concept site, liquify.us

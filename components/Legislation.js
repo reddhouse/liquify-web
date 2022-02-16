@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useContext } from 'react'
+import { useState, useContext } from 'react'
 import styled, { css } from 'styled-components'
 import { uid } from 'react-uid'
-import { Today } from 'styled-icons/material/Today.cjs'
-import { ArrowLeft } from 'styled-icons/fa-solid/ArrowLeft.cjs'
-import { ArrowRight } from 'styled-icons/fa-solid/ArrowRight.cjs'
-import { LiquidContext } from './LiquidStore'
+import { Today } from '@styled-icons/material'
+import { ArrowLeft } from '@styled-icons/fa-solid'
+import { ArrowRight } from '@styled-icons/fa-solid'
+import { LiquidContext } from '../lib/LiquidStore'
 import BillDetails from './BillDetails'
 
 function Legislation() {
@@ -40,15 +40,15 @@ function Legislation() {
       scroll: true,
       disappearIf: `BILL${bill.billId}`,
       makeDisappear: `BILL${bill.billId}`,
-      jsx: <BillDetails bill={bill} idx={idx}/>
+      jsx: <BillDetails bill={bill} idx={idx} />
     })
   }
 
   return (
     <Container>
       <ColorCap>
-        <Title><StyledToday size="20"/>{" "}Legislation in Progress</Title>
-        <SubTitle>Bills Introduced by Lawmakers (newest first)</SubTitle>
+        <Title><StyledToday size="20" />{" "}Legislation in Progress</Title>
+        <SubTitle>Bills are introduced by lawmakers (newest first).</SubTitle>
       </ColorCap>
       {bills.slice(pageIdx, pageIdx + 3).map((bill, idx) => {
         return (

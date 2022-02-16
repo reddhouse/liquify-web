@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import styled, { css } from 'styled-components'
+import { useState } from 'react'
+import styled from 'styled-components'
 import VoteRocker from './VoteRocker'
 
 function InitiativeDetails({ initiative, idx }) {

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import styled, { css } from 'styled-components'
 import { uid } from 'react-uid'
-import { LiveHelp as Help } from 'styled-icons/material/LiveHelp.cjs'
-import { FAQs } from './DummyData'
+import { LiveHelp as Help } from '@styled-icons/material'
+import { FAQs } from '../lib/dummyData'
 
 /*
   TODO:
@@ -34,8 +34,8 @@ function QACombo({ qaObj, expandAll }) {
             <div key={uid(answer)}>
               {
                 localExpand || expandAll
-                ? <Answer><BoldA idx={idx}>A.</BoldA>{" "}{answer}</Answer>
-                : <div></div>
+                  ? <Answer><BoldA idx={idx}>A.</BoldA>{" "}{answer}</Answer>
+                  : <div></div>
               }
             </div>
           )
@@ -51,7 +51,7 @@ function Learn() {
   return (
     <Container>
       <ColorCap>
-        <Title><StyledHelp size="20"/>{" "}Frequently Asked Questions</Title>
+        <Title><StyledHelp size="20" />{" "}Frequently Asked Questions</Title>
         <SubTitle>Tap each question to see answer, or <Link onClick={() => setExpandAll(!expandAll)}>{expandAll ? "collapse" : "expand"}&nbsp;{"all"}.</Link></SubTitle>
       </ColorCap>
       {

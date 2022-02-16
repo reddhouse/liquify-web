@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useContext } from 'react'
+import { useState, useContext } from 'react'
 import styled, { css } from 'styled-components'
 import { uid } from 'react-uid'
-import { FormatListNumbered as List } from 'styled-icons/material/FormatListNumbered.cjs'
-import { ArrowLeft } from 'styled-icons/fa-solid/ArrowLeft.cjs'
-import { ArrowRight } from 'styled-icons/fa-solid/ArrowRight.cjs'
-import { Plus } from 'styled-icons/fa-solid/Plus.cjs'
-import { LiquidContext } from './LiquidStore'
+import { FormatListNumbered as List } from '@styled-icons/material'
+import { ArrowLeft } from '@styled-icons/fa-solid'
+import { ArrowRight } from '@styled-icons/fa-solid'
+import { Plus } from '@styled-icons/fa-solid'
+import { LiquidContext } from '../lib/LiquidStore'
 import InitiativeDetails from './InitiativeDetails'
 
 function Agenda() {
@@ -41,7 +41,7 @@ function Agenda() {
       scroll: true,
       disappearIf: `INITIATIVE${initiative.initiativeId}`,
       makeDisappear: `INITIATIVE${initiative.initiativeId}`,
-      jsx: <InitiativeDetails initiative={initiative} idx={idx}/>
+      jsx: <InitiativeDetails initiative={initiative} idx={idx} />
     })
   }
 
@@ -49,7 +49,7 @@ function Agenda() {
     <Container>
       <ColorCap>
         <Title><StyledList size="22" />{" "}Liquid Agenda</Title>
-        <SubTitle>Initiatives Ranked by Priority (voter&nbsp;support)</SubTitle>
+        <SubTitle>Initiatives are ranked by priority (voter&nbsp;support).</SubTitle>
       </ColorCap>
       {initiatives.slice(pageIdx, pageIdx + 3).map((initiative, idx) => {
         return (
@@ -108,7 +108,7 @@ const Rank = styled.span`
 const Initiative = styled.div`
   cursor: pointer;
   margin: 4px;
-  padding: 8px;
+  padding: 12px;
   color: ${props => props.theme.color7};
   background-color: ${props => props.theme.color1};
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);

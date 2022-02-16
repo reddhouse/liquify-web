@@ -1,6 +1,6 @@
-import React, { useState, useContext } from 'react'
-import styled, { css } from 'styled-components'
-import { LiquidContext } from './LiquidStore'
+import { useState, useContext } from 'react'
+import styled from 'styled-components'
+import { LiquidContext } from '../lib/LiquidStore'
 import Agenda from './Agenda'
 import VoteRocker from './VoteRocker'
 

@@ -1,26 +1,25 @@
-import React from 'react'
-import styled, { css } from 'styled-components'
-import { Droplet } from 'styled-icons/icomoon/Droplet.cjs'
+import styled from 'styled-components'
+import { Droplet } from '@styled-icons/icomoon'
 
 function WhatItIs() {
   return (
     <Container>
       <ColorCap>
-        <Title><StyledDroplet size="18"/>{" "}What is Liquify?</Title>
-        <SubTitle>Liquid Democracy in Action</SubTitle>
+        <Title><StyledDroplet size="18" />{" "}What is Liquify?</Title>
+        <SubTitle>It's liquid democracy in action!</SubTitle>
       </ColorCap>
 
       {/* <SectionTitle>First, what is liquid democracy?</SectionTitle> */}
       <ShortBreak>&nbsp;</ShortBreak>
-      <Indent>Liquid democracy fixes our government by removing special interests from the lawmaking process.</Indent>
+      <Indent>Liquid democracy improves our government by removing special interests from the lawmaking process.</Indent>
 
 
       <ShortBreak>&nbsp;</ShortBreak>
       <div>Instead of giving your elected representative free reign to make laws on your behalf, liquid democracy encourages citizens to vote on individual issues.</div>
       <ShortBreak>&nbsp;</ShortBreak>
-      <div>If you are too busy, or disinterested in civic matters, you can delegate your votes to someone you know or trust. All votes, delegated or direct, eventually <i>flow</i> down to your elected representative.</div>
+      <div>If you're too busy, you can delegate your votes to someone you know or trust. All votes, delegated or direct, eventually make their way to your elected representative.</div>
       <ShortBreak>&nbsp;</ShortBreak>
-      <div>Things get interesting when representatives in office become "liquid representatives", which means they have pledged to regularly tally liquid votes, and act in accordance with the majority of voters on EVERY policy choice.</div>
+      <div>Things get interesting when representatives in office become "liquid representatives", which means they have pledged to regularly tally liquid votes, and act in accordance with the majority of voters on every policy choice.</div>
 
       <br />
       <SectionTitle>Liquify enhances liquid democracy.</SectionTitle>
@@ -79,9 +78,6 @@ const BoldSpan = styled.span`
 `
 
 const Indent = styled.div`
-  margin: 0% 5%;
   margin-bottom: 4px;
-  text-align: center;
-  ${'' /* color: ${props => props.theme.color10}; */}
   font-weight: 600;
 `
